@@ -4,7 +4,7 @@ var currentPage = 1;
 function initialize() {
     $('html,body').css({width: '100%', height: '100%', overflow: 'hidden'});
     $('.page').each(function(index) {
-        $(this).css({postion: 'absolute', left: (100 * index)+"%", width: '100%', height: '100%'});
+        $(this).css({position: 'absolute', left: (100 * index)+"%", width: '100%', height: '100%'});
         }
     );
 
@@ -99,7 +99,7 @@ $(function () {
 
     }
 
-    $('button:data(page-id) ,a:data(page-id)').on('click', function(e) {
+    $('[data-page-id]').on('click', function(e) {
         e.preventDefault();
         if(!inTransit) {
             console.log($(this).data('page-id'));
@@ -115,10 +115,10 @@ $(function () {
         var keyCode = e.keyCode;
         if(!inTransit) {
             if(keyCode == 37) {
-                $(this).trigger('vertical.next');
+                $(this).trigger('vertical.previous');
             }
             else if(keyCode == 39) {
-                $(this).trigger('vertical.previous');
+                $(this).trigger('vertical.next');
             }
         }
     });

@@ -10,8 +10,7 @@ v 0.1: not fully optimized, works mostly for computers. mobiles have to use clic
 
 ##Example
 
-<insert jsfiddle example here>
-
+[example here](http://williamwright.me/test.html)
 
 ##Installation instructions
 
