@@ -10,12 +10,16 @@ Horizontalizer is a simple JQuery application that helps you you build horizonta
 * Your html should look like this:
 
 ```html
-<div class="page">
-your first page here
-</div>
-<div class="page">
-your second page here
-</div>
+<html>
+<body>
+    <div class="page">
+        your first page here
+    </div>
+    <div class="page">
+        your second page here
+    </div>
+</body>
+</html>
 ```
 
 And there you go: all you need to do is navigate with the keyboard (left and right).
