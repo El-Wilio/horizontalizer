@@ -4,6 +4,15 @@
 
 Horizontalizer is a simple JQuery application that helps you you build horizontal websites. 
 
+##Version control
+
+v 0.1: not fully optimized, works mostly for computers. mobiles have to use clicks.
+
+##Example
+
+<insert jsfiddle example here>
+
+
 ##Installation instructions
 
 * Include horizontalizer.js in your script after JQuery (since it depends on JQuery).

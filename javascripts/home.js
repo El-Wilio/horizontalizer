@@ -4,11 +4,11 @@ var currentPage = 1;
 function initialize() {
     $('html,body').css({width: '100%', height: '100%', overflow: 'hidden'});
     $('.page').each(function(index) {
-        $(this).css({left: (100 * index)+"%", width: '100%', height: '100%'});
+        $(this).css({postion: 'absolute', left: (100 * index)+"%", width: '100%', height: '100%'});
         }
     );
 
-    $('.loading').hide();
+   // $('.loading').hide();
 
 } 
 
