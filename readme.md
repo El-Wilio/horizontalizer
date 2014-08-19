@@ -26,7 +26,7 @@ horizontalizer supports a click function for links and button for easier navigat
 
 ```html
 <a href="#" data-page-id="2">click me</a>
-,,,
+```
 
 Clicking this link would get you to page 2.
 Side note: first page is 1
