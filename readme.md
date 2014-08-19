@@ -31,7 +31,8 @@ horizontalizer supports a click function for links and button for easier navigat
 Clicking this link would get you to page 2.
 Side note: first page is 1
 
-# Additional information for mobile users
-As of it now
+## Additional information for mobile users
+
+Better support for mobile users is still underway. Currently, the only way to navigate with mobiles is to use buttons, but I'm working on a touch move function that mobiles users could use.
 
 
