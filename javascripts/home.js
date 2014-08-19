@@ -123,6 +123,11 @@ $(function () {
         }
     });
 
+
+    $(document).on('keydown', function(e) {
+        e.preventDefault();
+    });
+
 });
 
 
