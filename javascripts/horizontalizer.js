@@ -1,5 +1,5 @@
 var inTransit = false;
-var currentPage = 1;
+var currentPage;
 
 function initialize() {
     $('html,body').css({width: '100%', height: '100%', overflow: 'hidden'});
@@ -7,7 +7,7 @@ function initialize() {
         $(this).css({position: 'absolute', left: (100 * index)+"%", width: '100%', height: '100%'});
         }
     );
-
+    currentPage = 1;
    // $('.loading').hide();
 
 } 
@@ -51,9 +51,11 @@ function previous(multiply, animate) {
 $(function () {
 
     initialize();
+
     $(window).resize(function() {
+        var oldPage = currentPage;
         initialize();
-        pageSelector(currentPage, false);
+        pageSelector(oldPage, false);
         $('button').removeClass('selected');
     });
 
@@ -93,7 +95,7 @@ $(function () {
         }
         else if(multiplier < 0) {
             inTransit = true;
-            previous(Math.abs(multiplier, animate));
+            previous(Math.abs(multiplier), animate);
             setTimeout(function() { inTransit = false;}, 500);
         }
 
