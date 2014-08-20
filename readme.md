@@ -6,8 +6,8 @@ Horizontalizer is a simple JQuery application that helps you you build horizonta
 
 ##Version control
 
-v 0.1: not fully optimized, works mostly for computers. mobiles have to use clicks.
-v 0.2: Added the swipe support for mobile users
+* v 0.1: not fully optimized, works mostly for computers. mobiles have to use clicks.
+* v 0.2: Added the swipe support for mobile users
 
 ##Example
 
