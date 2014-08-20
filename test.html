@@ -1,0 +1,38 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+<script src="/horizontalizer.js"></script>
+<style>
+.content {
+position: absolute;
+width: 100%;
+height: 20%;
+top: 30%;
+}
+p {
+text-align: center;
+font-size: 40pt;
+}
+
+.navigation {
+z-index: 1;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 10%;
+font-size: 40pt;
+}
+
+</style>
+<body>
+<div class="navigation">
+<a href="#" data-page-id="1">first page</a>
+<a href="#" data-page-id="2">second page</a>
+<a href="#" data-page-id="3">third page</a>
+</div>
+<div class="page"><div class="content"><p>First Page</p></div></div>
+<div class="page"><div class="content"><p>Second Page</p></div></div>
+<div class="page"><div class="content"><p>Third Page</p></div></div>
+</body>

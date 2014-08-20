@@ -61,6 +61,7 @@ $(function () {
 
     $('body, html').on('touchmove', function(e) {
         e.preventDefault();
+
     });
 
     $(document).on('vertical.next', function() {
@@ -129,6 +130,25 @@ $(function () {
     $(document).on('keydown', function(e) {
         e.preventDefault();
     });
+
+    /** mobile specification those will only load if jquery-mobile is loaded **/
+    
+    if($.mobile) {    
+
+        $(document).on('tap', function(e) {
+        //  e.preventDefault();
+        });
+
+        $('.page').on('swipeleft', function() {
+            if(!inTransit) {
+                $(document).trigger('vertical.next');
+            }
+        }).on('swiperight', function() {
+            if(!inTransit) {
+                $(document).trigger('vertical.previous')
+            }
+        });
+    }
 
 });
 
